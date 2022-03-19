@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background: rgb(194, 114, 114);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .tabs {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 30rem;
+        margin: 5rem auto;
+        padding: 2rem;
+        border-radius: 20%;
+      }
+      .tabs input[type="radio"] {
+        display: none;
+      }
+
+      .tabs label {
+        padding: 2rem;
+        background: #a7a2f0;
+        font-weight: bold;
+        border-radius: 20%;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .tabs label:hover {
+        text-shadow: 2rem;
+        color: yellow;
+      }
+
+      .tabs .tab {
+        width: 100%;
+        padding: 1.5rem;
+        background: #fff;
+        order: 1;
+        display: none;
+      }
+
+      .tabs .tab h2 {
+        font-size: 2rem;
+      }
+
+      .tabs input[type="radio"]:checked + label + .tab {
+        display: block;
+      }
+      .tabs input[type="radio"]:checked + label {
+        background: white;
+      }
+    </style>
+    <div class="tabs">
+      <input type="radio" id="tab1" name="tabs" checked="checked" />
+      <label for="tab1">First</label>
+      <div class="tab">
+        <h2>First</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          similique iste eveniet labore possimus est libero nobis error quasi
+          quis!
+        </p>
+      </div>
+
+      <input type="radio" id="tab2" name="tabs" />
+      <label for="tab2">Second</label>
+      <div class="tab">
+        <h2>Second</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          similique iste eveniet labore possimus est libero nobis error quasi
+          quis!
+        </p>
+      </div>
+
+      <input type="radio" id="tab3" name="tabs" />
+      <label for="tab3">Third</label>
+      <div class="tab">
+        <h2>Third</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          similique iste eveniet labore possimus est libero nobis error quasi
+          quis!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+:root {
+}
+
+/* Css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  border: 1px solid grey;
+}
+
+html {
+  height: 100%;
+  text-align: center;
+  background-image: linear-gradient(
+    332deg,
+    rgba(236, 128, 27, 1) 0%,
+    rgba(176, 166, 18, 1) 34%,
+    rgba(0, 131, 228, 1) 100%
+  );
+  background-repeat: no-repeat;
+}
+
+.nav_bar {
+  margin: 0rem 2rem 0 2rem;
+}
+
+.nav_bar ul {
+  display: inline-flex;
+  flex-direction: row;
+  font-size: 3rem;
+  gap: 3rem;
+  list-style-type: none;
+  padding: 4rem;
+}
+
+.nav_item {
+  border: 1px solid #f3b408;
+}
+/* Main Page style */
+
+.hello_card {
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 120rem;
+  max-height: 120rem;
+  border-radius: 5rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 3rem;
+  margin: 0 5rem 4rem 5rem;
+  justify-content: center;
+}
+
+h1 {
+  display: inline-flex;
+  text-align: center;
+  padding: 3rem;
+  font-size: 4rem;
+  margin: 0 2rem 0 0rem;
+}
+
+.hi {
+  padding: ;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.profile_pic {
+  align-self: centerS;
+  max-width: 30rem;
+  max-height: 30rem;
+  border-radius: 50%;
+  box-shadow: 1rem 0.5rem 1rem rgba(3, 3, 3, 0.425);
+}
